@@ -1,4 +1,4 @@
-import { createSafeUser } from './user.service';
+import { createSafeUser } from './users.service';
 
 describe('createSafeUser', () => {
   it('returns a user without exposing the password', () => {

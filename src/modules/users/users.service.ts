@@ -1,4 +1,4 @@
-import { createUserInputSchema, type CreateUserInput } from './user.schema';
+import { createUserInputSchema, type CreateUserInput } from './users.schema';
 
 export interface SafeUser {
   email: string;
