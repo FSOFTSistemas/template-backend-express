@@ -1,6 +1,6 @@
 import express from 'express';
 import swaggerUi from 'swagger-ui-express';
-import { healthRouter } from './routes/health.route';
+import { healthRouter } from './modules/health/health.route';
 import { swaggerSpecification } from './config/swagger';
 
 export const app = express();
