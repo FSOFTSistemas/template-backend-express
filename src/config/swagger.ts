@@ -10,10 +10,10 @@ export const swaggerSpecification = swaggerJsdoc({
     },
     servers: [
       {
-        url: 'http://localhost:3000',
+        url: 'http://localhost:3000/api/v1',
         description: 'Local development server',
       },
     ],
   },
-  apis: ['src/routes/**/*.ts', 'dist/routes/**/*.js'],
+  apis: ['src/modules/**/*.route.ts', 'dist/modules/**/*.route.js'],
 });
