@@ -5,9 +5,9 @@ jest.mock('../src/config/database', () => ({
   prisma: {},
 }));
 
-describe('GET /api/v1/health (e2e)', () => {
+describe('GET /api/health (e2e)', () => {
   it('returns the API health status and a valid timestamp', async () => {
-    const response = await request(app).get('/api/v1/health').expect(200);
+    const response = await request(app).get('/api/health').expect(200);
     const body = response.body as { status: string; timestamp: string };
 
     expect(body).toEqual({

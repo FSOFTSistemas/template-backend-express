@@ -19,7 +19,7 @@ const apiRouter = express.Router();
 apiRouter.use(healthRouter);
 apiRouter.use(usersRouter);
 
-app.use('/api/v1', apiRouter);
+app.use('/api', apiRouter);
 
 // 404 Route
 app.use((_req, res) => {
